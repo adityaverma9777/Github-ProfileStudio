@@ -59,7 +59,7 @@ Add dynamic typing effects to your profile hero section.
 ### 📊 GitHub Stats Cards
 Showcase your GitHub activity with beautiful stat cards.
 
-<img src="https://github-readme-stats.vercel.app/api?username=adityaverma9777&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" width="100%"/>
+
 
 </td>
 <td width="50%">
@@ -67,7 +67,7 @@ Showcase your GitHub activity with beautiful stat cards.
 ### 🔥 Streak Stats
 Display your contribution streaks to show consistency.
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=adityaverma9777&theme=tokyonight&hide_border=true&background=0D1117" width="100%"/>
+
 
 </td>
 </tr>
@@ -77,7 +77,7 @@ Display your contribution streaks to show consistency.
 ### 💻 Top Languages
 Show off your most-used programming languages.
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=adityaverma9777&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" width="100%"/>
+
 
 </td>
 <td width="50%">
@@ -85,7 +85,7 @@ Show off your most-used programming languages.
 ### 🏆 GitHub Trophies
 Display your GitHub achievements and milestones.
 
-<img src="https://github-profile-trophy.vercel.app/?username=adityaverma9777&theme=discord&no-frame=true&no-bg=true&column=4&margin-w=10" width="100%"/>
+
 
 </td>
 </tr>
