@@ -186,6 +186,23 @@ Choose from professionally designed templates for every developer persona:
 
 ---
 
+## 📸 Screenshots
+
+<div align="center">
+
+### 🏠 Landing Page
+<img src="homepage.JPG" alt="GitHub Profile Studio Homepage" width="100%" style="border-radius: 10px; margin-bottom: 20px;"/>
+
+### 🎨 Template Gallery
+<img src="templates.JPG" alt="15+ Professional Templates" width="100%" style="border-radius: 10px; margin-bottom: 20px;"/>
+
+### 🛠️ Custom Builder
+<img src="builder.JPG" alt="Visual Profile Builder" width="100%" style="border-radius: 10px;"/>
+
+</div>
+
+---
+
 ## 💡 Why GitHub Profile Studio?
 
 <table>
