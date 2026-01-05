@@ -1,183 +1,254 @@
 <div align="center">
 
-# 🎨 GitHub Profile Studio
+<!-- Animated Header - Just like our tool generates! -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=GitHub%20Profile%20Studio&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32" width="100%"/>
 
-**Create stunning GitHub profile READMEs in minutes — no coding required.**
+<!-- Typing Animation - One of our key features! -->
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&multiline=true&repeat=true&width=800&height=100&lines=Create+Stunning+GitHub+Profiles+%F0%9F%9A%80;No+Coding+Required+%E2%9C%A8;15%2B+Beautiful+Templates+%F0%9F%8E%A8;One-Click+Export+to+Markdown+%F0%9F%93%8B" alt="Typing SVG" />
+</a>
 
-[![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+<br/>
+<br/>
 
-[Live Demo](https://githubprofilestudio.vercel.app) · [Report Bug](https://github.com/yourusername/githubprofilestudio/issues) · [Request Feature](https://github.com/yourusername/githubprofilestudio/issues)
+<!-- Tech Badges - Another feature we offer! -->
+[![Next.js](https://img.shields.io/badge/Built%20with-Next.js%2016-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Powered-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Live](https://img.shields.io/badge/🌐-Try%20It%20Live-6366F1?style=for-the-badge)](https://githubprofilestudio.vercel.app)
+
+<br/>
+
+### 🎯 Build Professional GitHub Profile READMEs in Minutes
+
+**No sign-up • Completely free • Export with one click**
+
+<br/>
+
+[<img src="https://img.shields.io/badge/🚀%20Start%20Building-6366F1?style=for-the-badge&logoColor=white" height="50"/>](https://githubprofilestudio.vercel.app/builder/custom)
+&nbsp;&nbsp;
+[<img src="https://img.shields.io/badge/🎨%20Browse%20Templates-10B981?style=for-the-badge&logoColor=white" height="50"/>](https://githubprofilestudio.vercel.app/templates)
 
 </div>
 
 ---
 
-## ✨ Features
+## ✨ What Can You Create?
 
-| Feature | Description |
-|---------|-------------|
-| 🎭 **15+ Templates** | Professional templates for developers, students, data scientists, and more |
-| ⌨️ **Typing Animations** | Add dynamic typing effects to your hero section |
-| 📊 **GitHub Stats** | Auto-generate stats cards, streak counters, and contribution graphs |
-| 🛠️ **Tech Stack Badges** | 100+ technology badges with automatic icon matching |
-| 👁️ **Live Preview** | Real-time preview as you build — WYSIWYG experience |
-| 📦 **One-Click Export** | Export clean markdown ready for your GitHub profile |
-| 🌓 **Dark/Light Mode** | Preview how your README looks in both themes |
-| 🔒 **No Sign-up Required** | Start building immediately, completely free |
+<table>
+<tr>
+<td width="50%">
 
----
+### 🐍 Contribution Snake Animation
+Generate animated snakes that eat your GitHub contributions!
 
-## 🚀 Quick Start
+<img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" width="100%"/>
 
-### Prerequisites
+</td>
+<td width="50%">
 
-- Node.js 18+
-- npm, yarn, pnpm, or bun
+### ⌨️ Typing Animations
+Add dynamic typing effects to your profile hero section.
 
-### Installation
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=F75C7E&center=true&vCenter=true&width=400&lines=Hello%2C+I'm+a+Developer!;Welcome+to+my+Profile;Let's+Build+Something+Amazing" alt="Typing SVG" />
 
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/githubprofilestudio.git
+</td>
+</tr>
+<tr>
+<td width="50%">
 
-# Navigate to the project
-cd githubprofilestudio
+### 📊 GitHub Stats Cards
+Showcase your GitHub activity with beautiful stat cards.
 
-# Install dependencies
-npm install
+<img src="https://github-readme-stats.vercel.app/api?username=adityaverma9777&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" width="100%"/>
 
-# Start the development server
-npm run dev
-```
+</td>
+<td width="50%">
 
-Open [http://localhost:3000](http://localhost:3000) to see the app.
+### 🔥 Streak Stats
+Display your contribution streaks to show consistency.
 
----
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=adityaverma9777&theme=tokyonight&hide_border=true&background=0D1117" width="100%"/>
 
-## 🏗️ Project Structure
+</td>
+</tr>
+<tr>
+<td width="50%">
 
-```
-src/
-├── app/                      # Next.js App Router
-│   ├── builder/              # Profile builder
-│   │   ├── custom/           # Custom editor with Inspector
-│   │   ├── panels/           # Left & Preview panels
-│   │   └── state/            # Zustand stores
-│   ├── templates/            # Template showcase pages
-│   └── page.tsx              # Homepage
-├── components/               # Reusable UI components
-│   ├── preview/              # Markdown preview renderers
-│   └── layout/               # Header, Footer
-├── data/
-│   └── templates.ts          # 15 production-ready templates
-├── lib/
-│   ├── template-engine/      # Core rendering pipeline
-│   ├── canvas-lib/           # Tech catalog & serialization
-│   ├── asset-engine/         # Dynamic asset generation
-│   └── exporter/             # Markdown export utilities
-└── types/                    # TypeScript definitions
-```
+### 💻 Top Languages
+Show off your most-used programming languages.
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=adityaverma9777&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" width="100%"/>
+
+</td>
+<td width="50%">
+
+### 🏆 GitHub Trophies
+Display your GitHub achievements and milestones.
+
+<img src="https://github-profile-trophy.vercel.app/?username=adityaverma9777&theme=discord&no-frame=true&no-bg=true&column=4&margin-w=10" width="100%"/>
+
+</td>
+</tr>
+</table>
 
 ---
 
-## 🎯 How It Works
+## 🛠️ Tech Stack Badges
 
-1. **Choose a Template** — Browse 15+ professionally designed templates
-2. **Customize** — Edit text, add badges, configure GitHub stats
-3. **Preview** — See real-time changes in the live preview
-4. **Export** — Copy the generated markdown to your GitHub profile README
-
----
-
-## 📸 Screenshots
+Create beautiful technology badges for your skills section - choose from **100+ technologies**:
 
 <div align="center">
 
-| Homepage | Template Browser |
-|----------|------------------|
-| ![Homepage](public/screenshots/homepage.png) | ![Builder](public/screenshots/builder.png) |
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
-| Editor with Inspector | Preview |
-|-----------------------|---------|
-| ![Editor](public/screenshots/editor.png) | ![Preview](public/screenshots/preview.png) |
+**...and 90+ more technologies available!**
 
 </div>
 
 ---
 
-## 🧩 Available Sections
+## 🎨 15+ Beautiful Templates
 
-| Section | Description |
-|---------|-------------|
-| **Hero** | Eye-catching intro with typing animations |
-| **About** | Bio with highlights and current focus |
-| **Tech Stack** | Categorized technology badges |
-| **GitHub Stats** | Stats cards, streaks, top languages |
-| **Projects** | Showcase featured repositories |
-| **Social Links** | Connect with LinkedIn, Twitter, etc. |
-| **Custom Markdown** | Add any custom content |
+Choose from professionally designed templates for every developer persona:
+
+<div align="center">
+
+| Template | Best For |
+|:--------:|:---------|
+| 🎓 **Student Starter** | CS students & bootcamp grads |
+| 💼 **Fullstack Developer** | Backend + Frontend engineers |
+| 🎨 **Frontend Pro** | UI/UX focused developers |
+| 🔧 **Backend Engineer** | API & server-side specialists |
+| 📊 **Data Scientist** | ML/AI practitioners |
+| 🛡️ **Security Researcher** | Cybersecurity professionals |
+| 📱 **Mobile Developer** | iOS/Android developers |
+| ☁️ **DevOps Engineer** | Infrastructure & CI/CD experts |
+| 🎮 **Game Developer** | Game dev enthusiasts |
+| 🌐 **Open Source Contributor** | OSS maintainers |
+| ✍️ **Technical Writer** | Documentation specialists |
+| 🏢 **Tech Lead** | Engineering managers |
+
+</div>
 
 ---
 
-## 🛠️ Tech Stack
+## 🌟 Key Features
 
-- **Framework:** [Next.js 16](https://nextjs.org/) with App Router
-- **UI Library:** [React 19](https://react.dev/)
-- **Language:** [TypeScript 5](https://www.typescriptlang.org/)
-- **Styling:** [Tailwind CSS 4](https://tailwindcss.com/)
-- **State Management:** [Zustand](https://zustand-demo.pmnd.rs/)
-- **Markdown:** [React Markdown](https://remarkjs.github.io/react-markdown/) + [remark-gfm](https://github.com/remarkjs/remark-gfm)
-- **Icons:** [Lucide React](https://lucide.dev/)
+<div align="center">
+
+| Feature | Description |
+|:-------:|:------------|
+| 🎭 **15+ Templates** | Professionally designed, ready to use |
+| ⌨️ **Typing Animations** | Dynamic text effects for your hero |
+| 🐍 **Contribution Snake** | Animated snake eating your commits |
+| 📊 **GitHub Stats** | Auto-generated stats, streaks & languages |
+| 🛠️ **100+ Tech Badges** | Showcase your entire skill set |
+| 📂 **Project Showcase** | Feature your best repositories |
+| 🔗 **Social Links** | Connect all your profiles |
+| 👁️ **Live Preview** | Real-time WYSIWYG editing |
+| 🌓 **Theme Support** | Preview in light & dark mode |
+| 📋 **One-Click Export** | Copy markdown instantly |
+| 🔒 **No Sign-up** | Start building immediately |
+| 💯 **100% Free** | No hidden costs, ever |
+
+</div>
 
 ---
 
-## 📝 Scripts
+## 🚀 How It Works
 
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start development server |
-| `npm run build` | Build for production |
-| `npm run start` | Start production server |
-| `npm run lint` | Run ESLint |
+<div align="center">
+
+```
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│   1. Choose     │ → │   2. Customize  │ → │   3. Preview    │ → │   4. Export     │
+│    Template     │    │    Content      │    │    Live         │    │    Markdown     │
+└─────────────────┘    └─────────────────┘    └─────────────────┘    └─────────────────┘
+```
+
+**1.** Pick from 15+ templates or start blank  
+**2.** Add your info, tech stack, projects & socials  
+**3.** See real-time preview as you edit  
+**4.** Export and paste into your GitHub profile  
+
+</div>
+
+---
+
+## 💡 Why GitHub Profile Studio?
+
+<table>
+<tr>
+<td align="center" width="33%">
+
+### ⚡ Fast
+Build a complete profile in under 5 minutes
+
+</td>
+<td align="center" width="33%">
+
+### 🎯 Easy
+No coding knowledge required at all
+
+</td>
+<td align="center" width="33%">
+
+### ✨ Beautiful
+Professional designs that stand out
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Here's how you can help:
+Found a bug or have a feature idea? We'd love to hear from you!
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+- 🐛 [Report a Bug](https://github.com/adityaverma9777/Github-ProfileStudio/issues/new?labels=bug&template=bug_report.md)
+- 💡 [Request a Feature](https://github.com/adityaverma9777/Github-ProfileStudio/issues/new?labels=enhancement&template=feature_request.md)
+- ⭐ Star this repo if you find it helpful!
 
 ---
 
-## 📄 License
+## 💖 Support the Project
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+If you love GitHub Profile Studio, consider supporting its development:
 
----
+<div align="center">
 
-## 💖 Support
+<a href="https://buymeacoffee.com/adityaverma9777">
+  <img src="bmc_qr.png" alt="Buy Me A Coffee QR" width="200"/>
+</a>
 
-If you find this project helpful, consider:
+<br/>
+<br/>
 
-- ⭐ Starring the repository
-- 🐛 Reporting bugs
-- 💡 Suggesting new features
-- ☕ [Buying me a coffee](https://buymeacoffee.com/yourusername)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/adityaverma9777)
+
+</div>
 
 ---
 
 <div align="center">
 
+<!-- Footer Wave - Matching our header! -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" width="100%"/>
+
 **Made with ❤️ for the developer community**
 
-[⬆ Back to Top](#-github-profile-studio)
+[🚀 Start Building Your Profile Now](https://githubprofilestudio.vercel.app/builder/custom)
 
 </div>
