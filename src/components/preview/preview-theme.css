@@ -1,0 +1,558 @@
+/**
+ * GitHub-like Preview Theme
+ *
+ * CSS that closely matches GitHub's README rendering.
+ * Based on GitHub's markdown-body styles.
+ */
+
+/* ============================================================================
+   BASE THEME VARIABLES
+   ============================================================================ */
+
+.github-preview {
+  --color-fg-default: #1f2328;
+  --color-fg-muted: #656d76;
+  --color-fg-subtle: #6e7781;
+  --color-fg-accent: #0969da;
+  --color-bg-default: #ffffff;
+  --color-bg-subtle: #f6f8fa;
+  --color-bg-muted: #f6f8fa;
+  --color-border-default: #d0d7de;
+  --color-border-muted: #d8dee4;
+  --color-neutral-muted: rgba(175, 184, 193, 0.2);
+  --color-accent-fg: #0969da;
+  --color-accent-emphasis: #0969da;
+  --color-success-fg: #1a7f37;
+  --color-attention-fg: #9a6700;
+  --color-danger-fg: #cf222e;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  color: var(--color-fg-default);
+  background-color: var(--color-bg-default);
+}
+
+/* Dark Theme */
+.github-preview[data-theme="dark"] {
+  --color-fg-default: #e6edf3;
+  --color-fg-muted: #8b949e;
+  --color-fg-subtle: #6e7681;
+  --color-fg-accent: #58a6ff;
+  --color-bg-default: #0d1117;
+  --color-bg-subtle: #161b22;
+  --color-bg-muted: #21262d;
+  --color-border-default: #30363d;
+  --color-border-muted: #21262d;
+  --color-neutral-muted: rgba(110, 118, 129, 0.4);
+  --color-accent-fg: #58a6ff;
+  --color-accent-emphasis: #1f6feb;
+  --color-success-fg: #3fb950;
+  --color-attention-fg: #d29922;
+  --color-danger-fg: #f85149;
+}
+
+/* ============================================================================
+   TYPOGRAPHY
+   ============================================================================ */
+
+.github-preview h1,
+.github-preview h2,
+.github-preview h3,
+.github-preview h4,
+.github-preview h5,
+.github-preview h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--color-fg-default);
+}
+
+.github-preview h1 {
+  font-size: 2em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--color-border-muted);
+}
+
+.github-preview h2 {
+  font-size: 1.5em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--color-border-muted);
+}
+
+.github-preview h3 {
+  font-size: 1.25em;
+}
+
+.github-preview h4 {
+  font-size: 1em;
+}
+
+.github-preview h5 {
+  font-size: 0.875em;
+}
+
+.github-preview h6 {
+  font-size: 0.85em;
+  color: var(--color-fg-muted);
+}
+
+.github-preview p {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.github-preview strong {
+  font-weight: 600;
+}
+
+.github-preview em {
+  font-style: italic;
+}
+
+/* ============================================================================
+   LINKS
+   ============================================================================ */
+
+.github-preview a {
+  color: var(--color-accent-fg);
+  text-decoration: none;
+}
+
+.github-preview a:hover {
+  text-decoration: underline;
+}
+
+/* ============================================================================
+   IMAGES
+   ============================================================================ */
+
+.github-preview img {
+  max-width: 100%;
+  box-sizing: content-box;
+  border-style: none;
+}
+
+.github-preview img[align="center"],
+.github-preview p[align="center"] img,
+.github-preview .text-center img,
+.github-preview p.text-center img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* ============================================================================
+   CODE
+   ============================================================================ */
+
+.github-preview code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  white-space: break-spaces;
+  background-color: var(--color-neutral-muted);
+  border-radius: 6px;
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+}
+
+.github-preview pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  color: var(--color-fg-default);
+  background-color: var(--color-bg-subtle);
+  border-radius: 6px;
+}
+
+.github-preview pre code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+/* ============================================================================
+   BLOCKQUOTES
+   ============================================================================ */
+
+.github-preview blockquote {
+  margin: 0 0 16px 0;
+  padding: 0 1em;
+  color: var(--color-fg-muted);
+  border-left: 0.25em solid var(--color-border-default);
+}
+
+.github-preview blockquote> :first-child {
+  margin-top: 0;
+}
+
+.github-preview blockquote> :last-child {
+  margin-bottom: 0;
+}
+
+/* ============================================================================
+   LISTS
+   ============================================================================ */
+
+.github-preview ul,
+.github-preview ol {
+  margin-top: 0;
+  margin-bottom: 16px;
+  padding-left: 2em;
+}
+
+.github-preview ul ul,
+.github-preview ul ol,
+.github-preview ol ol,
+.github-preview ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.github-preview li {
+  word-wrap: break-all;
+}
+
+.github-preview li>p {
+  margin-top: 16px;
+}
+
+.github-preview li+li {
+  margin-top: 0.25em;
+}
+
+/* ============================================================================
+   HORIZONTAL RULES
+   ============================================================================ */
+
+.github-preview hr {
+  height: 0.25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: var(--color-border-default);
+  border: 0;
+}
+
+/* ============================================================================
+   TABLES
+   ============================================================================ */
+
+.github-preview table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-top: 0;
+  margin-bottom: 16px;
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  overflow: auto;
+}
+
+.github-preview table th {
+  font-weight: 600;
+}
+
+.github-preview table th,
+.github-preview table td {
+  padding: 6px 13px;
+  border: 1px solid var(--color-border-default);
+}
+
+.github-preview table tr {
+  background-color: var(--color-bg-default);
+  border-top: 1px solid var(--color-border-muted);
+}
+
+.github-preview table tr:nth-child(2n) {
+  background-color: var(--color-bg-subtle);
+}
+
+/* ============================================================================
+   BADGES
+   ============================================================================ */
+
+.github-preview .badge-container {
+  display: inline-flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.github-preview .badge-container img {
+  height: auto;
+}
+
+/* ============================================================================
+   STATS CARDS
+   ============================================================================ */
+
+.github-preview .stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.github-preview .stats-container img {
+  height: auto;
+  max-height: 200px;
+}
+
+/* ============================================================================
+   SOCIAL LINKS
+   ============================================================================ */
+
+.github-preview .social-links {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.github-preview .social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ============================================================================
+   LAYOUT HELPERS
+   ============================================================================ */
+
+.github-preview .text-center {
+  text-align: center;
+}
+
+.github-preview .text-left {
+  text-align: left;
+}
+
+.github-preview .text-right {
+  text-align: right;
+}
+
+.github-preview .flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.github-preview .flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.github-preview .grid {
+  display: grid;
+  gap: 16px;
+}
+
+.github-preview .grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.github-preview .grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* ============================================================================
+   SPACERS
+   ============================================================================ */
+
+.github-preview .spacer-xs {
+  height: 8px;
+}
+
+.github-preview .spacer-sm {
+  height: 16px;
+}
+
+.github-preview .spacer-md {
+  height: 24px;
+}
+
+.github-preview .spacer-lg {
+  height: 32px;
+}
+
+.github-preview .spacer-xl {
+  height: 48px;
+}
+
+/* ============================================================================
+   CARDS
+   ============================================================================ */
+
+.github-preview .card {
+  padding: 16px;
+  background-color: var(--color-bg-subtle);
+  border: 1px solid var(--color-border-default);
+  border-radius: 6px;
+}
+
+.github-preview .card-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.github-preview .card-description {
+  margin: 0;
+  color: var(--color-fg-muted);
+  font-size: 0.9em;
+}
+
+.github-preview .card-footer {
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+  font-size: 0.85em;
+  color: var(--color-fg-muted);
+}
+
+/* ============================================================================
+   EXPERIENCE / EDUCATION ITEMS
+   ============================================================================ */
+
+.github-preview .timeline-item {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 24px;
+}
+
+.github-preview .timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-accent-fg);
+  border-radius: 50%;
+}
+
+.github-preview .timeline-item::after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 20px;
+  width: 2px;
+  height: calc(100% - 12px);
+  background-color: var(--color-border-default);
+}
+
+.github-preview .timeline-item:last-child::after {
+  display: none;
+}
+
+.github-preview .timeline-title {
+  margin: 0 0 4px;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.github-preview .timeline-subtitle {
+  margin: 0 0 4px;
+  font-size: 0.9em;
+  color: var(--color-fg-muted);
+}
+
+.github-preview .timeline-date {
+  font-size: 0.85em;
+  color: var(--color-fg-subtle);
+}
+
+/* ============================================================================
+   ACHIEVEMENTS
+   ============================================================================ */
+
+.github-preview .achievement {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 12px;
+  background-color: var(--color-bg-subtle);
+  border-radius: 6px;
+}
+
+.github-preview .achievement-icon {
+  font-size: 1.5em;
+}
+
+.github-preview .achievement-content {
+  flex: 1;
+}
+
+.github-preview .achievement-title {
+  margin: 0 0 4px;
+  font-weight: 600;
+}
+
+.github-preview .achievement-description {
+  margin: 0;
+  font-size: 0.9em;
+  color: var(--color-fg-muted);
+}
+
+/* ============================================================================
+   SECTION CONTAINER
+   ============================================================================ */
+
+.github-preview .section {
+  margin-bottom: 32px;
+}
+
+.github-preview .section:last-child {
+  margin-bottom: 0;
+}
+
+/* ============================================================================
+   TYPING ANIMATION PLACEHOLDER
+   ============================================================================ */
+
+.github-preview .typing-placeholder {
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+  color: var(--color-fg-default);
+  border-right: 2px solid var(--color-accent-fg);
+  padding-right: 4px;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: var(--color-accent-fg);
+  }
+}
+
+/* ============================================================================
+   RESPONSIVE
+   ============================================================================ */
+
+@media (max-width: 768px) {
+
+  .github-preview .grid-2,
+  .github-preview .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .github-preview .stats-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
